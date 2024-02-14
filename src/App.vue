@@ -1,5 +1,5 @@
 <script setup></script>
-
+<!-- importera nav-bar component -->
 <template>
   <header></header>
 

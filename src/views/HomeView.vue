@@ -1,10 +1,10 @@
 <script setup>
-import WeatherInformation from '../components/WeatherInformation.vue'
+import SkyWatch from '../components/SkyWatch.vue'
 </script>
 
 <template>
   <main>
-    <WeatherInformation />
+    <SkyWatch />
   </main>
 </template>
 

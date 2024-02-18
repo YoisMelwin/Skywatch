@@ -121,13 +121,14 @@ onMounted(getWeatherData)
 .container {
   display: flex;
   justify-content: center;
+  padding: 30px;
 }
 
 .inner-container {
   width: 90%;
-  max-width: 600px;
+  max-width: 500px;
   background-color: #f0f0f0;
-  padding: 20px;
+  padding: 100px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

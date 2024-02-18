@@ -3,6 +3,7 @@ import SkyWatch from '../components/SkyWatch.vue'
 </script>
 
 <template>
+  <h1>SkyWatch</h1>
   <main>
     <SkyWatch />
   </main>
@@ -15,6 +16,6 @@ import SkyWatch from '../components/SkyWatch.vue'
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #08090b;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 </style>

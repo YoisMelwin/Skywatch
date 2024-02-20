@@ -16,6 +16,6 @@ import SkyWatch from '../components/SkyWatch.vue'
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #08090b;
-  margin-top: 0px;
+
 }
 </style>

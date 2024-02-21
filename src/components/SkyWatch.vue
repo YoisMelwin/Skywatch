@@ -14,6 +14,9 @@
       <div v-if="showCloudy" class="weather-condition">
         <img src="../assets/cloudy.png" alt="" />
       </div>
+      <div v-if="showFog" class="weather-condition">
+        <img src="../assets/cloudy.png" alt="" />
+      </div>
       <div v-if="showStormy" class="weather-condition">
         <img src="../assets/storm.png" alt="" />
       </div>
@@ -44,6 +47,7 @@ import axios from 'axios'
 
 const weatherDescription = ref('')
 const showRainy = ref(false)
+const showFog = ref(false)
 const showStormy = ref(false)
 const showCloudy = ref(false)
 const showSnowy = ref(false)
@@ -78,6 +82,7 @@ const getWeatherData = () => {
           showRainy.value = false
           showSnowy.value = false
           showClear.value = false
+          showFog.value = false
           break
         case mainDescription === 'Storm':
           showCloudy.value = false
@@ -85,6 +90,7 @@ const getWeatherData = () => {
           showRainy.value = false
           showSnowy.value = false
           showClear.value = false
+          showFog.value = false
           break
         case mainDescription === 'Rain':
           showCloudy.value = false
@@ -92,6 +98,7 @@ const getWeatherData = () => {
           showRainy.value = true
           showSnowy.value = false
           showClear.value = false
+          showFog.value = false
           break
         case mainDescription === 'Snow':
           showCloudy.value = false
@@ -99,6 +106,7 @@ const getWeatherData = () => {
           showRainy.value = false
           showSnowy.value = true
           showClear.value = false
+          showFog.value = false
           break
         case mainDescription === 'Clear':
           showCloudy.value = false
@@ -106,6 +114,15 @@ const getWeatherData = () => {
           showRainy.value = false
           showSnowy.value = false
           showClear.value = true
+          showFog.value = false
+          break
+        case mainDescription === 'Fog':
+          showCloudy.value = false
+          showStormy.value = false
+          showRainy.value = false
+          showSnowy.value = false
+          showClear.value = false
+          showFog.value = true
           break
         default:
       }
